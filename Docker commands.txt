@@ -1,2 +1,3 @@
 sudo su - 
 yum install git maven docker -y
+mvn clean install
