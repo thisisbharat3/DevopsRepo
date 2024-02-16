@@ -1,6 +1,6 @@
 Dockerfile instructions : 
 
-FROM : AND : ADD : EXPOSE
+FROM : AND : EXPOSE
 
 FROM : The FROM instruction in a Dockerfile specifies the base image from which you want to build your own image. 
        It's not a standalone command that you run in the Docker CLI, but rather a directive within the Dockerfile syntax.
