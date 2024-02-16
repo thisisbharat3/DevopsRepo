@@ -1,0 +1,25 @@
+Dockerfile instructions : 
+
+FROM : AND : ADD : EXPOSE
+
+FROM : The FROM instruction in a Dockerfile specifies the base image from which you want to build your own image. 
+       It's not a standalone command that you run in the Docker CLI, but rather a directive within the Dockerfile syntax.
+	
+       FROM : Create a new build stage from a base image.
+
+        Ex : FROM nginx:latest
+
+ADD :  The ADD instruction in Docker is used within Dockerfiles to copy files and directories from the host machine into the Docker image being built.
+
+       
+       ADD : Add local or remote files and directories.
+       
+       Ex : ADD source.txt /app/destination.txt
+	 
+
+EXPOSE : The EXPOSE instruction in Docker is used to specify which ports should be exposed by a Docker container at runtime.
+
+	 EXPOSE : Describe which ports your application is listening on.
+
+	 Ex : FROM nginx:latest
+	      EXPOSE 80/tcp 443/tcp
