@@ -26,13 +26,17 @@ sudo usermod -aG docker jenkins
 systemctl start jenkins
 systemctl status jenkins
 
+#jenkins password
+cat /var/lib/jenkins/secrets/initialAdminPassword
+
 # install docker compose
 curl -SL https://github.com/docker/compose/releases/download/v2.5.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 sudo yum update -y
 
-#github password
-cat /var/lib/jenkins/secrets/initialAdminPassword
+# install Ansible
+amazon-linux-extras list | grep ansible
+sudo amazon-linux-extras install ansible2 -y 
 
 ```
